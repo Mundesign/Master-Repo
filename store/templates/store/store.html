@@ -1,0 +1,39 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<h1> Mundesign </h1>
+<style>
+    /* Center align the text */
+    h1 {
+        text-align: center;
+        margin-bottom: 100px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    /* Increase the font size */
+    h1 {
+        font-size: 7.5em; /* Adjust the size as needed */
+    }
+</style>
+<br>
+<div class="row">
+    {% for product in products %}
+    <div class="col-lg-4">
+        <div class="product">
+            <h2>{{ product.name }}</h2>
+            <p> Price: ${{ product.price }}</p>
+            <p>{{ product.description }}</p>
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="img-fluid">
+            <div class="box-element product">
+                <hr>
+                <button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+                <a class="btn btn-outline-success" href="#">View</a>
+                <h4 style="display: inline-block; float: right"><strong>${{ product.price }}</strong></h4>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
