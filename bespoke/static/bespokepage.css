@@ -1,0 +1,28 @@
+p1 {
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+
+p2 {
+    text-align: center;
+    display:block;
+    margin: auto;
+}
+
+.centertext{
+    text-align: center;
+    color: navy;
+}
+
+h1 {
+    
+    text-align: center;
+    font-family: Calibri;
+}
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
