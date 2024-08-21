@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Wishlist - Jewelry Store{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Wishlist</h1>
+    <div class="section">
+        <ul class="list">
+            {% for item in wishlist_items %}
+                <li>{{ item.item_name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

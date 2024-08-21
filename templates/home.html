@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Mundesign{% endblock %}
+
+{% block content %}
+<div class="hero-banner text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('{% static 'images/hero.jpg' %}'); background-size: cover; background-position: center; height: 400px; position: relative;">
+
+    <div class="overlay" style="background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+
+    <div style="z-index: 2;">
+        <h1>Welcome to Mundesign</h1>
+        <p>Your one-stop destination for exquisite designs.</p>
+        <a href="{% url 'explore_more' %}" class="btn btn-danger">Explore More</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="content-module">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/Image-1.jpg' %}" class="card-img-top" alt="Image 1" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h2 class="card-title">Title 1</h2>
+                        <p class="card-text">Short description about the first product or service.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/Image-2.jpg' %}" class="card-img-top" alt="Image 2" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h2 class="card-title">Title 2</h2>
+                        <p class="card-text">Short description about the second product or service.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="{% static 'images/Image-3.jpg' %}" class="card-img-top" alt="Image 3" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h2 class="card-title">Title 3</h2>
+                        <p class="card-text">Short description about the third product or service.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

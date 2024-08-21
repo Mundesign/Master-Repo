@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Addresses - Jewelry Store{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Saved Addresses</h1>
+    <div class="section">
+        <ul class="list">
+            {% for address in addresses %}
+                <li>{{ address.line1 }} 
+                    {{ address.line2 }} 
+                    {{ address.city }} 
+                    {{ address.state }}, 
+                    {{ address.postal_code }}, {{ address.country }}
+                    {{ address.type }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+

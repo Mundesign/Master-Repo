@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Explore More | Mundesign{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Explore More</h1>
+    <p class="text-center mb-5">Discover a wide range of products and services that we offer.</p>
+    
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'images/Image-4.jpg' %}" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h2 class="card-title">Product 1</h2>
+                    <p class="card-text">Detailed description about the first product.</p>
+                    <a href="#" class="btn btn-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'images/Image-5.jpg' %}" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h2 class="card-title">Product 2</h2>
+                    <p class="card-text">Detailed description about the second product.</p>
+                    <a href="#" class="btn btn-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'images/Image-6.jpg' %}" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h2 class="card-title">Product 3</h2>
+                    <p class="card-text">Detailed description about the third product.</p>
+                    <a href="#" class="btn btn-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

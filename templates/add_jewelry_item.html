@@ -1,0 +1,17 @@
+<!-- templates/add_jewelry_item.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Add Jewelry Item
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Add Jewelry Item</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+</div>
+{% endblock %}

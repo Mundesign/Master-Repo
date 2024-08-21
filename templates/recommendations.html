@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block title %}Recommendations - Jewelry Store{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Recommendations</h1>
+    <div class="section">
+        <ul class="list">
+            {% for recommendation in recommendations %}
+                <li>{{ recommendation.product.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

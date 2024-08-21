@@ -1,0 +1,10 @@
+<!-- templates/add_to_cart.html -->
+{% extends 'base.html' %}
+
+{% block title %}Add to Cart{% endblock %}
+
+{% block content %}
+<h1>Item Added to Cart</h1>
+<p>{{ item.name }} has been added to your cart.</p>
+<a href="{% url 'cart_detail' %}">View Cart</a> | <a href="{% url 'jewelry_list' %}">Continue Shopping</a>
+{% endblock %}

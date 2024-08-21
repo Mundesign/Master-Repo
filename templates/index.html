@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="{% static 'shopapp/css/styles.css' %}">
+</head>
+<body>
+
+<h1>Order History</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Order Date</th>
+            <th>Items Purchased</th>
+            <th>Total Amount</th>
+            <th>Order Status</th>
+            <th>Delivery Address</th>
+            <th>Delivery Date</th>
+        </tr>
+    </thead>
+    <tbody id="order-history-body">
+        <!-- Order history data will be injected here -->
+    </tbody>
+</table>
+
+<script src="{% static 'shopapp/js/scripts.js' %}"></script>
+
+</body>
+</html>

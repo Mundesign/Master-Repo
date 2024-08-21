@@ -1,0 +1,10 @@
+<!-- templates/update_cart.html -->
+{% extends 'base.html' %}
+
+{% block title %}Update Cart{% endblock %}
+
+{% block content %}
+<h1>Cart Updated</h1>
+<p>Your cart has been updated.</p>
+<a href="{% url 'cart_detail' %}">View Cart</a> | <a href="{% url 'jewelry_list' %}">Continue Shopping</a>
+{% endblock %}

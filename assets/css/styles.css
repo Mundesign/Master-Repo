@@ -1,0 +1,353 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+/* Navbar adjustments */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Content margin adjustment */
+.content {
+    margin-top: 20px;
+}
+
+/* My Account Section */
+.my-account {
+    margin-top: 20px;
+}
+
+.my-account ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.my-account ul li {
+    margin: 10px 0;
+}
+
+.my-account ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.my-account ul li a:hover {
+    text-decoration: underline;
+}
+
+/* General Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* List Styles */
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Login Page Styles */
+.login {
+    background: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login #container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login .form-row {
+    padding: 10px 0;
+}
+
+.login .form-row label {
+    display: block;
+    line-height: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.login .form-row #id_username, .login .form-row #id_password {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login .submit-row {
+    padding: 20px 0 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.login .submit-row input {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login .submit-row input:hover {
+    background-color: #0056b3;
+}
+
+.login .password-reset-link {
+    text-align: center;
+}
+
+/* Additional styles for the jewelry list */
+.media img {
+    max-width: 100%;
+    height: auto;
+}
+
+.media-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left !important;
+}
+
+.media-body p {
+    font-size: 1rem;
+    color: #666;
+    text-align: left !important;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Ensure no margin around the banner */
+}
+
+.hero-banner .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-banner div {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+.hero-banner p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: white !important;
+}
+
+.hero-banner .btn {
+    font-size: 1.125rem;
+    padding: 10px 20px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn-danger {
+    background-color: #ff4c4c;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #ff1c1c;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff;           /* White text */
+    padding: 20px 0;
+}
+
+.footer .card-header {
+    color: #ffffff;
+}
+
+.footer .card-header .btn-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.footer .card-header .btn-link:hover {
+    text-decoration: underline;
+}
+
+.footer .card-body {
+    background-color: #454d55;
+    border-top: 1px solid #565e64;
+    padding: 15px;
+}
+
+.footer .card-body p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* FAQ Section */
+.accordion .card {
+    background: none;
+    border: none;
+}
+
+.accordion .card-header {
+    background: #343a40;
+    border-bottom: 1px solid #454d55;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.accordion .card-header:hover {
+    background: #454d55;
+}
+
+.accordion .card-body {
+    background: #454d55;
+    color: #ffffff;
+    border-top: 1px solid #565764;
+    padding: 15px;
+}
+
+/* Additional Styles */
+footer {
+    background-color: #000000 !important; /* Completely dark footer background */
+    color: white;              /* White text */
+    padding: 20px;             /* Adding padding for better appearance */
+}
+
+footer a {
+    color: white;              /* Ensuring any links in the footer are white */
+}
+
+footer .faq-title, footer .contact-info {
+    color: white;              /* Ensure all text elements within the footer are white */
+}

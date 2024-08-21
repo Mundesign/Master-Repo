@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Payment Details - Jewelry Store{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Saved Payment Details</h1>
+    <div class="section">
+        <ul class="list">
+            {% for payment in payments %}
+                <li>{{ payment.type }} ending in {{ payment.ending }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

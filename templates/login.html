@@ -1,0 +1,38 @@
+<!-- shopapp/templates/shopapp/login.html -->
+{% extends "base.html" %}
+
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<div class="login">
+    <div id="container" class="container">
+        <div class="main" id="main">
+            <main id="content-start" class="content" tabindex="-1">
+                <div id="content" class="colM">
+                    <div id="content-main">
+                        <form action="{% url 'login' %}" method="post" id="login-form">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <label for="id_username" class="required">Username:</label>
+                                <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+                            </div>
+                            <div class="form-row">
+                                <label for="id_password" class="required">Password:</label>
+                                <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                                <input type="hidden" name="next" value="{% if next %}{{ next }}{% else %}/{% endif %}">
+                            </div>
+                            <div class="submit-row">
+                                <input type="submit" value="Log in">
+                            </div>
+                        </form>
+                        {% if error %}
+                            <p>{{ error }}</p>
+                        {% endif %}
+                    </div>
+                    <br class="clear">
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+{% endblock %}
