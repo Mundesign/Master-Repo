@@ -19,6 +19,25 @@ from . import views
 
 urlpatterns = [
     path('', views.store, name='store'),
-    path('cart/', views.cart, name='cart'),
-    path('checkout/', views.checkout, name='checkout'),
+    path('about/', views.about, name='about'),
+    path('rings/', views.rings, name='rings'),
+    path('earrings/', views.earrings, name='earrings'),
+    path('necklace/', views.necklace, name='necklace'),
+    path('login/', views.login_user, name='login'),
+    path('logout/', views.logout_user, name='logout'),
+    path('register/', views.register_user, name='register'),
+    path('my-account/', views.my_account, name='my_account'),
+    path('orders/', views.orders, name='orders'),
+    path('wishlist/', views.wishlist, name='wishlist'),
+    path('preferences/', views.preferences, name='preferences'),
+    #path('update_password/', views.update_password, name='update_password'),
+    path('update_user/', views.update_user, name='update_user'),
+    #path('update_info/', views.update_info, name='update_info'),
+    path('product/<int:pk>', views.product, name='product'),
+    path('category/<str:foo>', views.category, name='category'),
+    path('category_summary/', views.category_summary, name='category_summary'),
+    #path('search/', views.search, name='search'),
+    
 ]
+
+

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My Account</h1>
+<p>Welcome, {{ user.username }}!</p>
+<p>Email: {{ user.email }}</p>
+
+<!-- Add links to update user details or other actions -->
+<a href="{% url 'update_user' %}">Update Profile</a>
+
+<!-- Include other relevant details or actions -->
+{% endblock %}
